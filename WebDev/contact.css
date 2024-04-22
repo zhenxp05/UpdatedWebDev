@@ -1,0 +1,129 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #141414;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    color: #ffffff;
+    cursor: 100;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .1s;
+}
+
+.navigation a:hover, a.active {
+    color: #66FF99;
+    border-bottom: 3px solid #66FF99;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 500px;
+    color: #ededed;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    padding: 30px 0px 30px 130px;
+}
+
+.content p {
+    font-size: 1em;
+    padding-bottom: 25px;
+    text-align: justify;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-color: #66FF99;
+}
+
+.image-container {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    width: 350px; 
+    height: 450px;
+    border: 2px solid #66FF99;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.image-container img {
+    padding-right: 75px;
+    width: 130%; 
+    height: 130%;
+    overflow: hidden;
+    object-fit: cover; 
+    object-position: center; 
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+form input:focus,
+form textarea:focus,
+form button:focus {
+    border-color: #66FF99;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #66FF99;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #66FF99;
+    
+}
