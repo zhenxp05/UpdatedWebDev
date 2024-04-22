@@ -1,0 +1,166 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #141414;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    color: #ffffff;
+    cursor: 100;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .1s;
+}
+
+.navigation a:hover, a.active {
+    color: #66FF99;
+    border-bottom: 3px solid #66FF99;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 500px;
+    color: #ededed;
+}
+
+.content h2 {                                                                               
+    font-size: 2.5em;
+    padding-bottom: 5px;
+}
+
+.content h5 {
+    font-size: 1.50em;
+    padding-bottom: 5px;
+}
+
+.content p {
+    font-size: 1em;
+    padding: 10px 0 40px 0;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-color: #66FF99;
+}
+
+.image-container {
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    width: 350px; 
+    height: 450px;
+    border: 2px solid #66FF99;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.image-container img {
+    padding-right: 75px;
+    width: 130%; 
+    height: 130%;
+    overflow: hidden;
+    object-fit: cover; 
+    object-position: center; 
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+.hire-me a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.hire-me a:hover:nth-child(1) {
+    color: #66FF99;
+    border: 2px solid #66FF99;
+}
+
+.hire-me a:nth-child(2) {
+    color: #66FF99;
+    border: 2px solid #66FF99;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.hire-me a:hover:nth-child(2) {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.page-container {
+    position: absolute;
+    color: #ffffff;
+    width: 100px;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-container a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #66FF99;
+    text-decoration: none;
+    line-height: 40px;
+    outline: 1px solid #ffffff;
+    transition: .3s;
+}
+
+.page-container a:hover {
+    transform: translateY(-5px);
+    color: #66FF99;
+    border: 2px solid #66FF99;
+    outline: 1px solid #66FF99;
+}
+
+.page-container a {
+    color: #ffffff;
+    font-size: 20px;
+}

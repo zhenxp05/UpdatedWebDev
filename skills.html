@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Production</title>
+    <link rel="stylesheet" href="skills.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>GT</span> Production</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="skills">
+        <div class="content">
+            <h1>My Skills</h1>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="001-premier.png" alt="Film Making">
+                    <h3>Film Making</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="002-adobe-photoshop.png" alt="Photography">
+                    <h3>Photography</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="003-video-editing.png" alt="Video Editing">
+                    <h3>Video Editing</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="004-graphic-design.png" alt="Graphic Design">
+                    <h3>Graphic Design</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="005-motion-graphics.png" alt="Motion Graphics">
+                    <h3>Motion Graphics</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <img src="006-3d-animation.png" alt="3D Animation">
+                    <h3>3D Animation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var nav = document.getElementById('nav');
+            var skillsSection = document.querySelector('.skills');
+
+            if (window.scrollY > nav.offsetTop + nav.offsetHeight) {
+                skillsSection.classList.add('fixed-skills');
+            } else {
+                skillsSection.classList.remove('fixed-skills');
+            }
+        });
+    </script>
+</body>
+</html>
