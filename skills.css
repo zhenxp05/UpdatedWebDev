@@ -12,7 +12,7 @@ header {
     top: 0%;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 40px;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,6 @@ header {
     margin-right: 40px;
     font-weight: 500;
     transition: .1s;
-    
 }
 
 .navigation a:hover, a.active {
@@ -42,57 +41,91 @@ header {
 }
 
 .skills {
-    padding: 50px 0;
-    background: transparent;
-    overflow: hidden;
-    text-align: center;
-    z-index: 1;
-}
-
-.skills .content h1 {
-    color: #66FF99;
-    padding-top: 40px;
-    margin-bottom: 30px;
-}
-
-.skill-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.skill-box {
-    flex: 1;
-    max-width: 200px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.skill-title {
-    margin-bottom: 20px;
-}
-
-.skill-title img {
+    position: relative;
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 20px 100px;
 }
 
-.skill-title h3 {
+.skills img {
+    display: block;
     margin-top: 10px;
-    font-size: 1.2rem;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
 }
 
-@media (max-width: 768px) {
-    .skill-container {
-        flex-wrap: wrap;
-    }
+.content {
+    max-width: 720px;
+    color: #ededed;
+    padding-bottom: 50px;
+}
 
-    .skill-box {
-        flex: 1 0 45%;
-        margin-bottom: 20px;
-    }
+.content h1 {
+    font-size: 2.5em;
+    padding: 40px 0px 50px 400px;
+}
+
+.content h3 {
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.content p {
+    color: #66FF99;
+    font-size: 1em;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-color: #66FF99;
+}
+
+.table-skills {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-skills div {
+    align-items: center;
+    border: 2px solid #66FF99;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    transition: .2s;
+}
+
+.table-skills div:hover {
+    transform: translateY(-10px);
 }
 
 
+.table-skills td {
+    padding-left: 20px;
+}
+
+.hire-me {
+    margin-top: 425px;
+    margin-left: 150px;
+}
+
+.hire-me a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.hire-me a:hover:nth-child(1) {
+    color: #66FF99;
+    border: 2px solid #66FF99;
+}
