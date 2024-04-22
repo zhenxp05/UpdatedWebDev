@@ -18,64 +18,51 @@
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </header>
+    </header> 
     <section class="skills">
         <div class="content">
-            <h1>My Skills</h1>
+            <h1><u>My Skills</u></h1>
+            <table class="table-skills">
+                <tr>
+                    <td>
+                        <div class="skill1">
+                            <img class="color" src="film-making.png" alt="Film Making">
+                            <h3>Film Making</h3>
+                            <p>9/10</p>
+                        </div>
+                    </td>
+        
+                    <td>
+                        <div class="skill2">
+                            <img class="color" src="diaphragms.png" alt="Photography">
+                            <h3>Photography</h3>
+                            <p>7/10</p>
+                        </div>
+                    </td>
+        
+                    <td>
+                        <div class="skill3">
+                            <img class="color" src="premiere-pro.png" alt="Video Editing">
+                            <h3>Video Editing</h3>
+                            <p>7/10</p>
+                        </div>
+                    </td>
+        
+                    <td>
+                        <div class="skill4">
+                            <img class="color" src="photoshop.png" alt="Graphic Design">
+                            <h3>Graphic Design</h3>
+                            <p>9/10</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="skill-container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="001-premier.png" alt="Film Making">
-                    <h3>Film Making</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="002-adobe-photoshop.png" alt="Photography">
-                    <h3>Photography</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="003-video-editing.png" alt="Video Editing">
-                    <h3>Video Editing</h3>
-                </div>
-            </div>
+
+        <div class="hire-me">
+            <a href="contact.html">Hire Me</a>
         </div>
-        <div class="skill-container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="004-graphic-design.png" alt="Graphic Design">
-                    <h3>Graphic Design</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="005-motion-graphics.png" alt="Motion Graphics">
-                    <h3>Motion Graphics</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <img src="006-3d-animation.png" alt="3D Animation">
-                    <h3>3D Animation</h3>
-                </div>
-            </div>
-        </div>
+        
     </section>
-
-    <script>
-        window.addEventListener('scroll', function() {
-            var nav = document.getElementById('nav');
-            var skillsSection = document.querySelector('.skills');
-
-            if (window.scrollY > nav.offsetTop + nav.offsetHeight) {
-                skillsSection.classList.add('fixed-skills');
-            } else {
-                skillsSection.classList.remove('fixed-skills');
-            }
-        });
-    </script>
 </body>
 </html>
